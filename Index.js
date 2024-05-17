@@ -2,7 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const jwt = require('jsonwebtoken');
 const Stripe = require('stripe')
-const stripe = Stripe('sk_test_51NG0wJIqESqwJl7AeUBjPxR7Ps6FigfybcHD9KimgPArBhWypp08l3bJRqONgIT6b3awkYPZTAekMC2vgidqyLuA00sVcWZ5lG')
+const stripe = Stripe(process.env.STRIPE_TOKEN)
 const app = express();
 
 
